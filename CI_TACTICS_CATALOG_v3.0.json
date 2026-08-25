@@ -1,0 +1,2083 @@
+{
+  "catalog_metadata": {
+    "title": "Critical Inquiry AI Tactics Catalog",
+    "version": "3.1",
+    "description": "Authorized instructional tactics for the Critical Inquiry AI Curriculum Engine (secondary ELA). Each tactic includes required schema fields and aligns with v3.0 System Instructions, Knowledge Base, and QA Checklist. This v3.1 update adds 8 canonical literacy routines to strengthen coverage of school-wide practices.",
+    "last_updated": "2026-08-25",
+    "schema_version": "3.0",
+    "changelog": [
+      "v3.0 - 2026-08-25: Full migration from v2.0 to v3.0 schema; normalized phase, text_type, grouping, cognitive_demand, and timing to scalars; converted instructional_moves to ordered string arrays; added grade_band, formative_check, and framing_stance to all tactics; added 18 disciplinary-practice tactics (CI_CRAFT_01-04, CI_WRITE_01-04, CI_TEST_01-04, CI_AESTH_01-04, CI_INQ_01-02); added catalog-level changelog and schema notes.",
+      "v3.1 - 2026-08-25: Added 8 canonical literacy routines to strengthen coverage of school-wide practices: Reciprocal Teaching Cycle (CI_RT_01), QAR Question-Answer Relationship Drill (CI_QAR_01), KWL+ Critical Extension (CI_KWL_01), 1Q3R Reading Routine (CI_1Q3R_01), ETX Experience-Text-Connection Protocol (CI_ETX_01), Think-Pair-Share with Evidence (CI_TPS_01), Jigsaw Content Expertise (CI_JIG_01), and Socratic Seminar (Open Inquiry) (CI_SOC_01). Total tactics: 76."
+    ],
+    "schema_notes": "All tactics must include: tactic_id, tactic_name, phase, text_type, scaffold_level, cognitive_demand, grouping, estimated_time_minutes_min, estimated_time_minutes_max, instructional_moves (array of strings), output_product, contraindications (array of strings), grade_band, formative_check (boolean), framing_stance. Phase: warm_up, direct_instruction, guided_practice, independent_practice, closure. Text_type: literary, informational, legal, visual, multimodal, data, news_media, primary_sources, historical, speech, narrative, film, digital, philosophical. Grouping: individual, pairs, small_groups, VRG_small, whole_class. Cognitive_demand: DOK 1, DOK 2, DOK 3, DOK 4. Grade_band: 9-10, 11-12, 9-12. Framing_stance: explicitly_critical, open_exploratory, neutral_descriptive."
+  },
+  "tactics": [
+    {
+      "tactic_id": "critical_whats_going_on_bell_ringer",
+      "tactic_name": "Critical 'What's Going On?' Observation",
+      "phase": "warm_up",
+      "text_type": "visual",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 5,
+      "estimated_time_minutes_max": 7,
+      "instructional_moves": [
+        "Teacher displays an image or primary source without context.",
+        "Students write individually: What do you notice? What do you infer? What questions do you have?",
+        "Teacher leads a brief whole-class share to compare interpretations.",
+        "Teacher names patterns and links to the day's inquiry."
+      ],
+      "output_product": "A three-section note (Notice, Infer, Question) with at least two specific observations and two inferences about the image or source.",
+      "contraindications": [
+        "Do not use with images that are overly complex for a 5-7 minute warm-up.",
+        "Avoid images that require sensitive content protocols without safeguards in place."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "headline_deconstruction_launch",
+      "tactic_name": "Headline Deconstruction Launch",
+      "phase": "warm_up",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 8,
+      "estimated_time_minutes_max": 10,
+      "instructional_moves": [
+        "Teacher displays 2-3 headlines on the same event from different outlets.",
+        "Pairs identify framing devices and implied audiences.",
+        "Teacher connects headline framing to the day's inquiry question.",
+        "Class shares patterns and links to the EQ."
+      ],
+      "output_product": "A pair-annotated comparison noting at least two framing word choices and an inferred audience for each headline.",
+      "contraindications": [
+        "Do not use with highly polarizing current events unless sensitivity protocols are in place.",
+        "Limit to 2-3 headlines to keep the task focused."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "image_framing_interrogation",
+      "tactic_name": "Image Framing Interrogation",
+      "phase": "warm_up",
+      "text_type": "visual",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 10,
+      "estimated_time_minutes_max": 12,
+      "instructional_moves": [
+        "Teacher displays a single powerful image related to the unit theme.",
+        "Groups analyze: Who is centered? Who is marginalized? What story does this tell about power?",
+        "Teacher names patterns and links to the day's inquiry.",
+        "Class records strong claims on the board."
+      ],
+      "output_product": "A group analysis noting who is centered/marginalized in the image and one claim about how the image constructs power, supported by at least two visual details.",
+      "contraindications": [
+        "Do not use images depicting graphic violence or trauma without sensitivity protocols.",
+        "Keep to one image to maintain focus in a short warm-up."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "counter_story_hook",
+      "tactic_name": "Counter-Story Hook",
+      "phase": "warm_up",
+      "text_type": "narrative",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 6,
+      "estimated_time_minutes_max": 8,
+      "instructional_moves": [
+        "Teacher introduces majoritarian story vs. counter-story.",
+        "Students read/view the counter-story and respond to a focused prompt.",
+        "Students share responses in pairs.",
+        "Teacher connects the counter-story to the day's inquiry question and anchor text."
+      ],
+      "output_product": "A 3-5 sentence quickwrite that identifies a dominant story challenged by the counter-story and cites at least one specific detail from the counter-story excerpt or image.",
+      "contraindications": [
+        "Do not use if the counter-story excerpt is too long; keep it under 150 words or 1 short visual for a warm-up.",
+        "Avoid using counter-stories that require extensive background knowledge not yet built in the unit."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "power_perspective_quickwrite",
+      "tactic_name": "Power Perspective Quickwrite",
+      "phase": "warm_up",
+      "text_type": "literary",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 5,
+      "estimated_time_minutes_max": 6,
+      "instructional_moves": [
+        "Teacher poses a power-focused prompt tied to the day's text.",
+        "Students write a focused response with textual evidence.",
+        "Teacher uses 1-2 student claims to launch the day's inquiry.",
+        "Class connects claims to the EQ."
+      ],
+      "output_product": "A 5-8 sentence quickwrite making one claim about power in the excerpt, supported by at least one textual reference.",
+      "contraindications": [
+        "Do not use when students have no prior exposure to the text and need more scaffolding.",
+        "Keep the prompt narrowly focused to fit a 6-minute warm-up."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "visual_omission_analysis",
+      "tactic_name": "Visual Omission Analysis",
+      "phase": "warm_up",
+      "text_type": "visual",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 8,
+      "estimated_time_minutes_max": 10,
+      "instructional_moves": [
+        "Teacher displays an image and asks what is missing.",
+        "Pairs list omissions and connect them to power or ideology.",
+        "Teacher highlights how omissions construct meaning.",
+        "Class links observations to the CIQ."
+      ],
+      "output_product": "A pair list of at least three omissions in the image, each connected to an inference about power or perspective.",
+      "contraindications": [
+        "Do not use with images where omissions are too subtle for students' current skill level.",
+        "Avoid images that require sensitive content protocols without safeguards."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "vocabulary_decoding_launch",
+      "tactic_name": "Vocabulary Decoding Launch",
+      "phase": "warm_up",
+      "text_type": "literary",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 6,
+      "estimated_time_minutes_max": 8,
+      "instructional_moves": [
+        "Teacher displays 3-4 key academic or disciplinary words from the day's text.",
+        "Students compare definitions and refine using context clues.",
+        "Teacher confirms accurate definitions and links to the text.",
+        "Class refers back to words during reading."
+      ],
+      "output_product": "A set of 3-4 student-friendly definitions co-constructed in pairs, each tied to a word from the day's text.",
+      "contraindications": [
+        "Do not use for more than 4 words in a short warm-up.",
+        "Avoid highly abstract terms without concrete context in the day's excerpt."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "rhetorical_quick_check",
+      "tactic_name": "Rhetorical Quick Check",
+      "phase": "warm_up",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 5,
+      "estimated_time_minutes_max": 7,
+      "instructional_moves": [
+        "Teacher displays a short excerpt (2-4 sentences) from a speech or article.",
+        "Students label the rhetorical move and explain its effect.",
+        "Teacher names patterns and links to the day's inquiry.",
+        "Class connects examples to the EQ."
+      ],
+      "output_product": "A 2-3 sentence annotation identifying one rhetorical move, citing the phrase, and explaining its intended effect.",
+      "contraindications": [
+        "Do not use with excerpts that are too long or linguistically dense for a 7-minute warm-up.",
+        "Ensure students have prior exposure to basic rhetorical appeals."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "quote_perspective_flip",
+      "tactic_name": "Quote Perspective Flip",
+      "phase": "warm_up",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 8,
+      "estimated_time_minutes_max": 10,
+      "instructional_moves": [
+        "Teacher displays a short quote from a dominant character or authority.",
+        "Pairs rewrite the quote and note how meaning shifts.",
+        "Teacher connects perspective shifts to the day's inquiry.",
+        "Class reads rewrites aloud and links to the CIQ."
+      ],
+      "output_product": "A 2-4 sentence rewritten quote from a marginalized or silent perspective, plus 1-2 sentences noting how power or meaning changes.",
+      "contraindications": [
+        "Do not use when students lack basic understanding of the characters or context.",
+        "Avoid quotes tied to highly sensitive topics without safeguards."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "world_text_sprint",
+      "tactic_name": "World Text Sprint",
+      "phase": "warm_up",
+      "text_type": "literary",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 5,
+      "estimated_time_minutes_max": 6,
+      "instructional_moves": [
+        "Teacher sets a short timed reading sprint (1-2 paragraphs).",
+        "Students read and annotate for surprise/confusion/connection.",
+        "Teacher uses annotations to launch the day's inquiry.",
+        "Class collects 2-3 student questions."
+      ],
+      "output_product": "An annotated excerpt with at least two marks (surprise, confusion, or connection) tied to the unit question.",
+      "contraindications": [
+        "Do not use with excerpts that are too long for a 6-minute sprint.",
+        "Ensure the excerpt is accessible enough for independent reading."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "critical_lens_mini_lesson",
+      "tactic_name": "Critical Lens Mini-Lesson",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 12,
+      "estimated_time_minutes_max": 15,
+      "instructional_moves": [
+        "Teacher names and defines the critical lens in accessible language.",
+        "Teacher models applying the lens to a short excerpt.",
+        "Students apply the lens to a new excerpt in pairs.",
+        "Teacher names strong lens-based claims."
+      ],
+      "output_product": "A pair-generated claim that applies the critical lens to a specific piece of textual or visual evidence.",
+      "contraindications": [
+        "Do not introduce more than one new lens in a single lesson.",
+        "Avoid highly abstract lenses without concrete examples."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "ideological_framing_breakdown",
+      "tactic_name": "Ideological Framing Breakdown",
+      "phase": "direct_instruction",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 18,
+      "instructional_moves": [
+        "Teacher defines 'ideological framing' in accessible language.",
+        "Teacher models identifying framing in a short text.",
+        "Students identify one framing move in a new excerpt.",
+        "Teacher collects examples to discuss."
+      ],
+      "output_product": "A written analysis identifying one ideological framing move, the implied ideology, and one silenced alternative.",
+      "contraindications": [
+        "Do not use with texts where ideological framing is too subtle for students' current level.",
+        "Ensure students have prior practice with basic framing concepts."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "historical_contextualization_drill",
+      "tactic_name": "Historical Contextualization Drill",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 12,
+      "estimated_time_minutes_max": 15,
+      "instructional_moves": [
+        "Teacher presents 2-3 key historical facts relevant to the text.",
+        "Teacher models connecting one historical fact to a passage.",
+        "Students connect a different historical fact to a new passage.",
+        "Teacher names strong connections."
+      ],
+      "output_product": "A pair-written connection between one historical fact and one passage, explaining how context shifts meaning.",
+      "contraindications": [
+        "Do not overload with more than 3 historical facts in a short mini-lesson.",
+        "Ensure historical facts are accurate and sourced."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "subtext_silence_unpacking",
+      "tactic_name": "Subtext & Silence Unpacking",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher defines subtext and silence as analytical categories.",
+        "Teacher models identifying subtext and silence in a short scene or passage.",
+        "Students identify one subtext and one silence in a new excerpt.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one moment of subtext and one silence, each connected to a power dynamic.",
+      "contraindications": [
+        "Do not use with texts where subtext is too opaque for students' current skill level.",
+        "Ensure students have prior practice with inference and implication."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "power_dynamics_diagramming",
+      "tactic_name": "Power Dynamics Diagramming",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher assigns groups and displays a simple power diagram template.",
+        "Groups create a power map for the assigned scene or chapter.",
+        "Teacher leads a brief gallery walk and names patterns.",
+        "Class highlights strong diagrams."
+      ],
+      "output_product": "A group-created power dynamics diagram with at least four nodes and labeled arrows showing mechanisms of power.",
+      "contraindications": [
+        "Do not use with very short excerpts that lack multiple actors.",
+        "Ensure students understand basic power vocabulary (coerce, persuade, resist, etc.)."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "discourse_analysis_framework",
+      "tactic_name": "Discourse Analysis Framework",
+      "phase": "direct_instruction",
+      "text_type": "informational",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces a simplified discourse analysis framework.",
+        "Teacher models applying the framework to a short policy or speech excerpt.",
+        "Students apply the framework to a new excerpt in pairs.",
+        "Teacher names strong discourse-based claims."
+      ],
+      "output_product": "A pair-written claim about how discourse constructs power in the excerpt, supported by at least two textual references.",
+      "contraindications": [
+        "Do not use with texts that lack clear discursive rules or authority structures.",
+        "Ensure students have prior exposure to basic discourse concepts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "institutional_narrative_mapping",
+      "tactic_name": "Institutional Narrative Mapping",
+      "phase": "direct_instruction",
+      "text_type": "informational",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher assigns groups and defines 'institutional narrative'.",
+        "Groups analyze a policy, report, or institutional text and fill the template.",
+        "Teacher leads a brief share-out and names patterns across groups.",
+        "Class records key observations and links to the unit EQ."
+      ],
+      "output_product": "A group-created institutional narrative map with four sections (Mission, Authority, Beneficiaries, Silences), each supported by textual evidence.",
+      "contraindications": [
+        "Do not use with very short texts that lack institutional language.",
+        "Ensure students can distinguish between stated mission and actual effects."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "counter_narrative_framing_instruction",
+      "tactic_name": "Counter-Narrative Framing Instruction",
+      "phase": "direct_instruction",
+      "text_type": "narrative",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher defines counter-narrative and contrasts it with dominant narratives.",
+        "Teacher models identifying counter-narrative moves in a short text.",
+        "Students identify one counter-narrative move in a new excerpt.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one counter-narrative move, the dominant story it challenges, and how it reframes meaning.",
+      "contraindications": [
+        "Do not use with texts where counter-narrative is too implicit for students' current level.",
+        "Ensure students have prior exposure to dominant vs. counter-narrative concepts."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "think_aloud_critical_deconstruction",
+      "tactic_name": "Think-Aloud Critical Deconstruction",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 18,
+      "instructional_moves": [
+        "Teacher explains that they will model their thinking while reading.",
+        "Teacher models critical questions and inferences while reading.",
+        "Students practice think-aloud in pairs with a new excerpt.",
+        "Teacher names strong moves."
+      ],
+      "output_product": "A pair-annotated excerpt with at least three think-aloud moves (notice, infer, position).",
+      "contraindications": [
+        "Do not use with texts that are too dense for real-time thinking aloud.",
+        "Ensure students have prior exposure to think-aloud protocols."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "margins_to_center_annotation_model",
+      "tactic_name": "Margins-to-Center Annotation Model",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher explains the margins-to-center protocol.",
+        "Teacher models annotating a short passage with M/C/? marks.",
+        "Students annotate a new passage using the same protocol.",
+        "Teacher names strong shifts."
+      ],
+      "output_product": "An annotated passage with at least two marginal voices, one central voice, and one claim about how centering a marginal voice changes meaning.",
+      "contraindications": [
+        "Do not use with texts that lack clear marginal/central distinctions.",
+        "Ensure students understand the difference between marginal and central voices."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "rhetorical_stance_deconstruction_model",
+      "tactic_name": "Rhetorical Stance Deconstruction Model",
+      "phase": "direct_instruction",
+      "text_type": "speech",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 20,
+      "estimated_time_minutes_max": 22,
+      "instructional_moves": [
+        "Teacher defines rhetorical stance (author, audience, purpose, context).",
+        "Teacher models analyzing stance in a short speech or essay excerpt.",
+        "Students analyze stance in a new excerpt in pairs.",
+        "Teacher names strong stance-based claims."
+      ],
+      "output_product": "A pair-written claim about how rhetorical stance constructs power in the excerpt, supported by at least two textual references.",
+      "contraindications": [
+        "Do not use with texts where author/audience/purpose are unclear.",
+        "Ensure students have prior exposure to basic rhetorical concepts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "problem_posing_reading_model",
+      "tactic_name": "Problem-Posing Reading Model",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher introduces problem-posing reading as asking critical questions while reading.",
+        "Teacher models problem-posing questions on a short excerpt.",
+        "Students apply problem-posing questions to a new excerpt in pairs.",
+        "Teacher names strong problem-posing claims."
+      ],
+      "output_product": "A pair-written claim identifying the problem the text responds to, who benefits, and who is harmed, supported by textual evidence.",
+      "contraindications": [
+        "Do not use with texts that lack clear social or political stakes.",
+        "Ensure students have prior exposure to problem-posing concepts."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "intertextual_comparison_walkthrough",
+      "tactic_name": "Intertextual Comparison Walkthrough",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces two texts that speak to each other.",
+        "Teacher models one point of comparison.",
+        "Students identify one additional point of comparison in pairs.",
+        "Teacher names strong comparisons."
+      ],
+      "output_product": "A pair-written comparison identifying one additional contrast between the two texts and explaining how it changes interpretation of power or knowledge.",
+      "contraindications": [
+        "Do not use with texts that are too long or complex for side-by-side analysis in one lesson.",
+        "Ensure students have prior exposure to both texts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "stereotype_decoding_model",
+      "tactic_name": "Stereotype Decoding Model",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher defines stereotype and explains how texts reproduce or challenge them.",
+        "Teacher models identifying a stereotype in a short excerpt or scene.",
+        "Students identify one stereotype in a new excerpt or scene.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one stereotype, the group stereotyped, how it is constructed, and one silenced alternative.",
+      "contraindications": [
+        "Do not use with texts where stereotypes are too subtle for students' current level.",
+        "Ensure a safe classroom culture for discussing stereotypes."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "jigsaw_counter_perspective",
+      "tactic_name": "Jigsaw Counter-Perspective",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 25,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher divides the class into expert groups, each with a different counter-perspective text.",
+        "Expert groups read and analyze their counter-perspective text.",
+        "Students regroup so each new group has one expert per text.",
+        "Teacher names strong connections."
+      ],
+      "output_product": "A group comparison noting how multiple counter-perspectives intersect or differ in challenging dominant stories.",
+      "contraindications": [
+        "Do not use with too many texts; limit to 3-4 counter-perspectives.",
+        "Ensure all texts are accessible enough for expert-group analysis."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "fishbowl_critical_debate",
+      "tactic_name": "Fishbowl Critical Debate",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 30,
+      "estimated_time_minutes_max": 35,
+      "instructional_moves": [
+        "Teacher sets up an inner circle (debate) and outer circle (observers).",
+        "Inner circle debates; outer circle observes and records.",
+        "Teacher leads a debrief connecting debate to the unit inquiry.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "Observer notes tracking claims, evidence, and counterclaims, plus a whole-class reflection connecting the debate to the unit EQ.",
+      "contraindications": [
+        "Do not use with highly sensitive topics without established norms and safeguards.",
+        "Ensure students have prior practice with evidence-based discussion."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "vertical_board_analysis",
+      "tactic_name": "Vertical Board Analysis",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "VRG_small",
+      "estimated_time_minutes_min": 20,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher forms visibly random groups of 3 and assigns each a vertical board.",
+        "Groups write their analysis on the vertical board.",
+        "Teacher leads a gallery walk and names strong moves.",
+        "Class highlights strong boards."
+      ],
+      "output_product": "A group-written vertical board analysis with a clear claim, textual evidence, and reasoning.",
+      "contraindications": [
+        "Do not use if vertical surfaces are unavailable.",
+        "Keep groups to 3-4 students to ensure individual accountability."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "rotational_gallery_walk",
+      "tactic_name": "Rotational Gallery Walk",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 20,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher posts multiple texts, images, or student artifacts around the room.",
+        "Groups rotate and annotate each station.",
+        "Teacher leads a debrief connecting observations to the unit inquiry.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "Annotated stations with observations and questions from each group, plus a whole-class synthesis.",
+      "contraindications": [
+        "Do not use with too many stations; limit to 4-6 for a 25-minute activity.",
+        "Ensure all artifacts are accessible enough for quick analysis."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "socratic_critical_lens_seminar",
+      "tactic_name": "Socratic Critical Lens Seminar",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 35,
+      "estimated_time_minutes_max": 40,
+      "instructional_moves": [
+        "Teacher arranges a Socratic circle and introduces the critical lens focus.",
+        "Students discuss the text using the lens and seminar norms.",
+        "Teacher leads a reflection on discussion quality and insights.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "A whole-class discussion with tracked argument moves and a reflection on claim shifts.",
+      "contraindications": [
+        "Do not use with texts that are too short or lack complexity for sustained discussion.",
+        "Ensure students have prior practice with Socratic norms."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "dialectical_journal_pairing",
+      "tactic_name": "Dialectical Journal Pairing",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 20,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces the dialectical journal format (quotes + responses).",
+        "Pairs read and create dialectical journal entries.",
+        "Teacher leads a brief share-out of strong journal entries.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "A dialectical journal with at least three quotes and critical responses.",
+      "contraindications": [
+        "Do not use with texts that are too short for multiple significant quotes.",
+        "Ensure students understand the difference between summary and critical response."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "perspective_taking_roleplay",
+      "tactic_name": "Perspective-Taking Roleplay",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 25,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher assigns roles based on characters or historical figures from the text.",
+        "Groups enact a scenario or conversation from their assigned perspectives.",
+        "Teacher leads a debrief connecting roleplay to the unit inquiry.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "A group roleplay and whole-class debrief noting how different perspectives reveal power dynamics.",
+      "contraindications": [
+        "Do not use with highly sensitive topics without established norms and safeguards.",
+        "Ensure all roles are clearly defined and respectful."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "mind_mapping_structural_power",
+      "tactic_name": "Mind Mapping Structural Power",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 25,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher introduces mind mapping as a way to visualize structural power.",
+        "Groups create a mind map of structural power in the text.",
+        "Teacher leads a gallery walk and names patterns.",
+        "Class highlights strong maps."
+      ],
+      "output_product": "A group-created mind map showing structural power relationships, with labeled nodes and mechanisms.",
+      "contraindications": [
+        "Do not use with texts that lack clear structural power dynamics.",
+        "Ensure students have prior exposure to basic power vocabulary."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "critical_counter_narrative_writing",
+      "tactic_name": "Critical Counter-Narrative Writing",
+      "phase": "independent_practice",
+      "text_type": "narrative",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 35,
+      "estimated_time_minutes_max": 40,
+      "instructional_moves": [
+        "Teacher introduces the counter-narrative writing task.",
+        "Students draft their counter-narrative.",
+        "Teacher provides formative feedback on drafts.",
+        "Students revise as time allows."
+      ],
+      "output_product": "A 1-2 page counter-narrative draft centering a marginalized voice and challenging a dominant story.",
+      "contraindications": [
+        "Do not use without prior analysis of dominant and counter-narratives.",
+        "Ensure students have access to writing supports (frames, examples)."
+      ],
+      "grade_band": "11-12",
+      "formative_check": false,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "rhetorical_analysis_essay_drafting",
+      "tactic_name": "Rhetorical Analysis Essay Drafting",
+      "phase": "independent_practice",
+      "text_type": "speech",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 40,
+      "estimated_time_minutes_max": 45,
+      "instructional_moves": [
+        "Teacher introduces the rhetorical analysis essay task.",
+        "Students draft their rhetorical analysis essay.",
+        "Teacher provides formative feedback on drafts.",
+        "Students revise as time allows."
+      ],
+      "output_product": "A rhetorical analysis essay draft with a clear thesis, textual evidence, and analysis of rhetorical strategies.",
+      "contraindications": [
+        "Do not use without prior instruction on rhetorical analysis.",
+        "Ensure students have access to writing supports (outlines, examples)."
+      ],
+      "grade_band": "11-12",
+      "formative_check": false,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "investigative_text_dossier",
+      "tactic_name": "Investigative Text Dossier",
+      "phase": "independent_practice",
+      "text_type": "informational",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 45,
+      "estimated_time_minutes_max": 50,
+      "instructional_moves": [
+        "Teacher introduces the investigative dossier task.",
+        "Students select and annotate texts for their dossier.",
+        "Teacher provides formative feedback on dossiers.",
+        "Teacher reviews and provides written or verbal feedback."
+      ],
+      "output_product": "An investigative dossier of 3-5 annotated texts triangulating the unit inquiry question.",
+      "contraindications": [
+        "Do not use without prior instruction on source evaluation.",
+        "Ensure students have access to research tools and databases."
+      ],
+      "grade_band": "11-12",
+      "formative_check": false,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "voice_amplification_draft",
+      "tactic_name": "Voice Amplification Draft",
+      "phase": "independent_practice",
+      "text_type": "narrative",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 30,
+      "estimated_time_minutes_max": 35,
+      "instructional_moves": [
+        "Teacher introduces the voice amplification task.",
+        "Students draft their voice amplification rewrite.",
+        "Teacher provides formative feedback on drafts.",
+        "Students revise as time allows."
+      ],
+      "output_product": "A 1-2 page rewrite of a scene or passage from a marginalized or silent character's perspective.",
+      "contraindications": [
+        "Do not use without prior analysis of marginal and central voices.",
+        "Ensure students have access to writing supports (frames, examples)."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "media_framing_contrast_matrix",
+      "tactic_name": "Media Framing Contrast Matrix",
+      "phase": "independent_practice",
+      "text_type": "news_media",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 30,
+      "estimated_time_minutes_max": 35,
+      "instructional_moves": [
+        "Teacher introduces the media framing matrix task.",
+        "Students select 2-3 outlets and complete the matrix.",
+        "Teacher leads a brief share-out of matrix findings.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "A media framing contrast matrix comparing 2-3 outlets' coverage of the same event.",
+      "contraindications": [
+        "Do not use with highly polarizing current events without sensitivity protocols.",
+        "Ensure students have access to multiple news sources."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "primary_source_synthesis",
+      "tactic_name": "Primary Source Synthesis",
+      "phase": "independent_practice",
+      "text_type": "primary_sources",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 35,
+      "estimated_time_minutes_max": 40,
+      "instructional_moves": [
+        "Teacher introduces the primary source synthesis task.",
+        "Students analyze and synthesize primary sources.",
+        "Teacher provides formative feedback on syntheses.",
+        "Teacher reviews and provides written or verbal feedback."
+      ],
+      "output_product": "A 1-2 paragraph synthesis of 2-3 primary sources constructing an evidence-based claim.",
+      "contraindications": [
+        "Do not use with sources that are too complex for independent analysis.",
+        "Ensure students have prior instruction on source synthesis."
+      ],
+      "grade_band": "11-12",
+      "formative_check": false,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "critical_exit_ticket",
+      "tactic_name": "Critical Exit Ticket",
+      "phase": "closure",
+      "text_type": "literary",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 4,
+      "estimated_time_minutes_max": 5,
+      "instructional_moves": [
+        "Teacher displays the exit ticket prompt.",
+        "Students write their exit ticket response.",
+        "Teacher reviews exit tickets to inform the next lesson.",
+        "Teacher notes common themes."
+      ],
+      "output_product": "An individual exit ticket response to a critical question tied to the day's inquiry.",
+      "contraindications": [
+        "Do not use with overly broad prompts; keep the question focused.",
+        "Ensure the prompt is accessible to all students."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "assumptions_audit_reflection",
+      "tactic_name": "Assumptions Audit Reflection",
+      "phase": "closure",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 6,
+      "estimated_time_minutes_max": 8,
+      "instructional_moves": [
+        "Teacher introduces the assumptions audit prompt.",
+        "Students write their assumptions audit.",
+        "Teacher reviews audits to track claim revision.",
+        "Teacher notes common themes."
+      ],
+      "output_product": "An individual reflection naming one assumption and the evidence that challenged or confirmed it.",
+      "contraindications": [
+        "Do not use without prior modeling of assumption-tracking.",
+        "Ensure the prompt is accessible to all students."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "synthesis_statement_closure",
+      "tactic_name": "Synthesis Statement Closure",
+      "phase": "closure",
+      "text_type": "literary",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 4,
+      "estimated_time_minutes_max": 5,
+      "instructional_moves": [
+        "Teacher introduces the synthesis statement prompt.",
+        "Students write their synthesis statement.",
+        "Teacher reviews statements to assess understanding.",
+        "Teacher notes common themes."
+      ],
+      "output_product": "An individual one-sentence synthesis of today's learning connected to the unit question.",
+      "contraindications": [
+        "Do not use with overly broad prompts; keep the question focused.",
+        "Ensure the prompt is accessible to all students."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "equity_voice_assessment",
+      "tactic_name": "Equity Voice Assessment",
+      "phase": "closure",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 6,
+      "estimated_time_minutes_max": 8,
+      "instructional_moves": [
+        "Teacher introduces the equity voice assessment prompt.",
+        "Students write their equity voice assessment.",
+        "Teacher reviews assessments to track equity patterns.",
+        "Teacher notes common themes."
+      ],
+      "output_product": "An individual reflection naming whose voice was centered/marginalized and how this affected discussion.",
+      "contraindications": [
+        "Do not use without prior modeling of equity-focused reflection.",
+        "Ensure the prompt is accessible to all students."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "counter_perspective_check",
+      "tactic_name": "Counter-Perspective Check",
+      "phase": "closure",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 5,
+      "estimated_time_minutes_max": 7,
+      "instructional_moves": [
+        "Teacher introduces the counter-perspective check prompt.",
+        "Students write their counter-perspective check.",
+        "Teacher reviews checks to track perspective-taking.",
+        "Teacher notes common themes."
+      ],
+      "output_product": "An individual reflection naming one counter-perspective and how it changed interpretation.",
+      "contraindications": [
+        "Do not use without prior analysis of counter-perspectives.",
+        "Ensure the prompt is accessible to all students."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "metacognitive_pedagogy_log",
+      "tactic_name": "Metacognitive Pedagogy Log",
+      "phase": "closure",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 8,
+      "estimated_time_minutes_max": 10,
+      "instructional_moves": [
+        "Teacher introduces the metacognitive pedagogy log prompt.",
+        "Students write their metacognitive pedagogy log.",
+        "Teacher reviews logs to refine pedagogy.",
+        "Teacher notes common themes."
+      ],
+      "output_product": "An individual reflection naming one teaching move that supported critical thinking and one application to own learning.",
+      "contraindications": [
+        "Do not use without prior modeling of metacognitive reflection.",
+        "Ensure the prompt is accessible to all students."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "media_bias_spectrum_launch",
+      "tactic_name": "Media Bias Spectrum Launch",
+      "phase": "warm_up",
+      "text_type": "news_media",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 8,
+      "estimated_time_minutes_max": 10,
+      "instructional_moves": [
+        "Teacher displays a spectrum and 2-3 media excerpts.",
+        "Pairs place excerpts on the spectrum and justify.",
+        "Teacher connects bias spectrum to the day's inquiry.",
+        "Class records strong justifications on the board."
+      ],
+      "output_product": "A pair-written placement of 2-3 media excerpts on a bias spectrum with evidence-based justifications.",
+      "contraindications": [
+        "Do not use with highly polarizing current events without sensitivity protocols.",
+        "Ensure the spectrum is clearly defined and accessible."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "archive_silence_quick_check",
+      "tactic_name": "Archive Silence Quick Check",
+      "phase": "warm_up",
+      "text_type": "primary_sources",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 5,
+      "estimated_time_minutes_max": 7,
+      "instructional_moves": [
+        "Teacher displays a short primary source or excerpt.",
+        "Students write their silence analysis.",
+        "Teacher connects silences to the day's inquiry.",
+        "Class reads strong responses aloud."
+      ],
+      "output_product": "An individual quickwrite naming at least one silenced voice and one possible reason for the silence.",
+      "contraindications": [
+        "Do not use with excerpts that are too complex for a 7-minute warm-up.",
+        "Ensure students have prior exposure to archive silence concepts."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "critical_race_counter_framing",
+      "tactic_name": "Critical Race Counter-Framing",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces critical race counter-framing as challenging dominant racial narratives.",
+        "Teacher models identifying a dominant racial narrative and counter-framing it.",
+        "Students identify and counter-frame a dominant racial narrative in a new excerpt.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one dominant racial narrative and a counter-frame that centers a marginalized perspective.",
+      "contraindications": [
+        "Do not use without prior instruction on critical race concepts.",
+        "Ensure a safe classroom culture for discussing race."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "hegemony_manufactured_consent",
+      "tactic_name": "Hegemony & Manufactured Consent",
+      "phase": "direct_instruction",
+      "text_type": "informational",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces hegemony and manufactured consent in accessible language.",
+        "Teacher models identifying manufactured consent in a short text.",
+        "Students identify one manufactured consent move in a new excerpt.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one manufactured consent move, the implied ideology, and one silenced alternative.",
+      "contraindications": [
+        "Do not use with texts where hegemony is too subtle for students' current level.",
+        "Ensure students have prior exposure to basic hegemony concepts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "decolonial_mapping_lecture",
+      "tactic_name": "Decolonial Mapping Lecture",
+      "phase": "direct_instruction",
+      "text_type": "historical",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces decolonial mapping as re-centering indigenous and marginalized geographies.",
+        "Teacher models comparing colonial and decolonial maps.",
+        "Students compare colonial and decolonial maps in pairs.",
+        "Teacher names strong comparisons."
+      ],
+      "output_product": "A pair-written comparison of colonial and decolonial maps noting one contrast and how it changes understanding of power and space.",
+      "contraindications": [
+        "Do not use without access to both colonial and decolonial maps.",
+        "Ensure students have prior exposure to basic colonial/decolonial concepts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "code_switching_rhetorical_model",
+      "tactic_name": "Code-Switching Rhetorical Model",
+      "phase": "direct_instruction",
+      "text_type": "speech",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 18,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher introduces code-switching as a rhetorical strategy.",
+        "Teacher models identifying code-switching in a short text.",
+        "Students identify one code-switching move in a new excerpt.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one code-switching move, the audiences addressed, and how this constructs power.",
+      "contraindications": [
+        "Do not use with texts that lack clear code-switching.",
+        "Ensure students have prior exposure to basic code-switching concepts."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "structural_irony_decoding",
+      "tactic_name": "Structural Irony Decoding",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces structural irony as a gap between appearance and reality at the text's level.",
+        "Teacher models identifying structural irony in a short text.",
+        "Students identify one structural irony in a new excerpt.",
+        "Teacher collects examples for discussion."
+      ],
+      "output_product": "A written analysis identifying one structural irony, the gap between appearance and reality, and what power dynamic this reveals.",
+      "contraindications": [
+        "Do not use with texts that lack clear structural irony.",
+        "Ensure students have prior exposure to basic irony concepts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "intersectional_matrix_modeling",
+      "tactic_name": "Intersectional Matrix Modeling",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 22,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces intersectionality as analyzing how multiple identities intersect to shape power.",
+        "Teacher models filling in one cell of the matrix.",
+        "Students fill in one cell of the matrix in pairs.",
+        "Teacher names strong intersections."
+      ],
+      "output_product": "A pair-written intersectional matrix cell analyzing how multiple identities intersect to shape power, supported by textual evidence.",
+      "contraindications": [
+        "Do not use with texts that lack clear intersectional dynamics.",
+        "Ensure students have prior exposure to basic intersectionality concepts."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "critical_world_cafes",
+      "tactic_name": "Critical World Cafés",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 30,
+      "estimated_time_minutes_max": 35,
+      "instructional_moves": [
+        "Teacher sets up multiple 'café tables' each with a different critical question or text.",
+        "Groups rotate and discuss each question.",
+        "Teacher leads a whole-class synthesis of café insights.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "Rotational discussion notes at multiple café tables, plus a whole-class synthesis connecting patterns to the EQ.",
+      "contraindications": [
+        "Do not use with too many cafés; limit to 4-5 for a 35-minute activity.",
+        "Ensure all questions are accessible enough for sustained discussion."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "four_corners_ideological_debate",
+      "tactic_name": "Four Corners Ideological Debate",
+      "phase": "guided_practice",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 25,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher labels four corners with ideological positions.",
+        "Students discuss their position in corners, then debate across corners.",
+        "Teacher leads a reflection on how positions shifted.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "A whole-class debate with tracked argument moves and a reflection on position shifts.",
+      "contraindications": [
+        "Do not use with highly sensitive topics without established norms and safeguards.",
+        "Ensure the debatable statement is clear and accessible."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "peer_lens_triad_critique",
+      "tactic_name": "Peer Lens Triad Critique",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 4",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 25,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher forms triads and assigns each member a critical lens.",
+        "Triads critique a text or student draft using their lenses.",
+        "Teacher leads a whole-class share-out of triad insights.",
+        "Class records key insights on the board."
+      ],
+      "output_product": "A triad-written critique of a text or draft from multiple critical lenses, plus a synthesis of insights.",
+      "contraindications": [
+        "Do not use without prior instruction on critical lenses.",
+        "Ensure all lenses are clearly defined and accessible."
+      ],
+      "grade_band": "11-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "counter_story_affinity_mapping",
+      "tactic_name": "Counter-Story Affinity Mapping",
+      "phase": "guided_practice",
+      "text_type": "narrative",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 25,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher introduces affinity mapping as grouping similar ideas or themes.",
+        "Groups read counter-stories and create affinity maps.",
+        "Teacher leads a gallery walk and names patterns.",
+        "Class highlights strong groupings."
+      ],
+      "output_product": "A group-created affinity map of counter-story themes, plus a whole-class synthesis connecting patterns to the EQ.",
+      "contraindications": [
+        "Do not use with too many counter-stories; limit to 3-4 for a 30-minute activity.",
+        "Ensure all counter-stories are accessible enough for quick analysis."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_CRAFT_01",
+      "tactic_name": "Pattern Hunt to Effect Map",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 12,
+      "estimated_time_minutes_max": 18,
+      "instructional_moves": [
+        "Teacher models identifying one craft pattern and its effect in a short excerpt.",
+        "Students in pairs scan a designated section of the text for 2-3 additional craft patterns.",
+        "Pairs record each pattern, the textual evidence, and the inferred effect on the reader.",
+        "Class compiles a shared 'Pattern → Effect' map on VNPS or a shared document.",
+        "Teacher facilitates a brief discussion linking patterns to theme, power, or identity where appropriate."
+      ],
+      "output_product": "A Pattern → Effect map showing at least three craft patterns with textual evidence and inferred effects.",
+      "contraindications": [
+        "Texts with very sparse or minimal craft features may not yield sufficient patterns.",
+        "Not ideal when the primary learning target is plot comprehension or basic recall."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "CI_CRAFT_02",
+      "tactic_name": "Craft Autopsy: Sentence-Level Power",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 10,
+      "estimated_time_minutes_max": 15,
+      "instructional_moves": [
+        "Teacher projects one complex or rhetorically significant sentence from the text.",
+        "Teacher models: identifying independent and dependent clauses, key modifiers, and modal verbs.",
+        "Teacher models how syntax and modality position the reader.",
+        "Students annotate a second sentence in pairs using the same protocol.",
+        "Class discusses how these sentence-level choices construct meaning, tone, or power."
+      ],
+      "output_product": "Annotated sentence with clause structure, modality notes, and a 1-2 sentence interpretation of how syntax positions the reader.",
+      "contraindications": [
+        "Not suitable when sentences are extremely simple and offer little syntactic complexity.",
+        "Avoid if students lack basic clause identification skills without additional scaffolding."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_CRAFT_03",
+      "tactic_name": "Genre-Bending Rewrite",
+      "phase": "independent_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher explains how genre conventions shape expectations.",
+        "Students select a short scene or passage from the anchor text.",
+        "Students rewrite the scene in a different genre while preserving core events or ideas.",
+        "Students write a brief reflection: how did genre change meaning, tone, or reader positioning?",
+        "Optional: share rewrites in small groups to compare effects."
+      ],
+      "output_product": "A genre-bent rewrite (1-2 paragraphs) plus a 3-5 sentence reflection on how genre shifted meaning.",
+      "contraindications": [
+        "Not ideal when the primary target is strict textual fidelity or historical accuracy.",
+        "Requires sufficient class time for writing and reflection."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "CI_CRAFT_04",
+      "tactic_name": "Figurative Language to Power Map",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 12,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher models how one metaphor, symbol, or image constructs a representation of identity, power, or norm.",
+        "Small groups identify 2-3 additional figurative elements in the text.",
+        "Groups map each figurative element to: literal meaning, figurative meaning, and implied power/identity construction.",
+        "Class synthesizes: how do these figurative choices normalize or contest certain identities or power relations?",
+        "Teacher names the critical frame explicitly and invites alternative readings."
+      ],
+      "output_product": "A Figurative Language → Power map with at least three entries linking figurative choices to identity/power constructions.",
+      "contraindications": [
+        "Texts with minimal figurative language may not support this tactic.",
+        "Requires students to have basic familiarity with metaphor, symbol, and imagery."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_WRITE_01",
+      "tactic_name": "Genre Autopsy: Mentor Text Deconstruction",
+      "phase": "direct_instruction",
+      "text_type": "informational",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 10,
+      "estimated_time_minutes_max": 15,
+      "instructional_moves": [
+        "Teacher presents a strong mentor text in the target genre.",
+        "Class identifies genre conventions: structure, voice, evidence types, audience moves, and openings/closings.",
+        "Teacher models how these conventions shape what can be said and how it is received.",
+        "Students annotate a second mentor text in pairs, marking genre moves.",
+        "Class discusses how they might use or bend these conventions in their own writing."
+      ],
+      "output_product": "Annotated mentor text with labeled genre moves and a short list of 'moves I might use' in their own writing.",
+      "contraindications": [
+        "Not suitable when no clear mentor texts are available.",
+        "Avoid if students lack basic paragraph and genre awareness without additional scaffolding."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "CI_WRITE_02",
+      "tactic_name": "Revision Memoir: Writerly Decision Log",
+      "phase": "independent_practice",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher explains that writers make visible decisions about structure, evidence, voice, and audience.",
+        "Students draft or revise a short piece.",
+        "Students maintain a 'Writerly Decision Log' noting at least three significant revisions and why they made them.",
+        "Students reflect on how these changes affected meaning, clarity, or impact.",
+        "Optional: peer share decision logs to compare revision strategies."
+      ],
+      "output_product": "A short written piece plus a Writerly Decision Log documenting at least three revisions and rationales.",
+      "contraindications": [
+        "Not ideal when the task is purely generative with no revision phase.",
+        "Requires time for drafting, revising, and reflection."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "CI_WRITE_03",
+      "tactic_name": "Counter-Narrative Seed Essay",
+      "phase": "independent_practice",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 20,
+      "estimated_time_minutes_max": 30,
+      "instructional_moves": [
+        "Teacher introduces the concept of counter-narrative.",
+        "Students identify a dominant narrative related to the unit theme.",
+        "Students draft a 'seed essay' that offers a counter-narrative using evidence from texts and/or lived knowledge.",
+        "Students include a brief reflection on how their counter-narrative complicates or reframes the dominant story.",
+        "Optional: use as a seed for a larger project or public artifact."
+      ],
+      "output_product": "A counter-narrative seed essay (1-2 pages) plus a short reflection on its relationship to the dominant narrative.",
+      "contraindications": [
+        "Not suitable when students lack sufficient background knowledge or source material.",
+        "Requires careful handling to avoid forcing personal disclosure."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_WRITE_04",
+      "tactic_name": "Audience Translation Lab",
+      "phase": "guided_practice",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher presents a short argument or analysis written for an academic audience.",
+        "Small groups select a new audience.",
+        "Groups rewrite a paragraph or section for that audience, adjusting evidence, tone, and genre.",
+        "Groups explain how and why they changed voice, evidence, and structure.",
+        "Class discusses how audience shapes genre and rhetorical choices."
+      ],
+      "output_product": "An audience-translated paragraph or section plus a brief rationale explaining key changes.",
+      "contraindications": [
+        "Not ideal when the primary target is maintaining a single, fixed audience.",
+        "Requires students to have a draft or excerpt to translate."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "CI_TEST_01",
+      "tactic_name": "Text-Dependent Question Autopsy",
+      "phase": "guided_practice",
+      "text_type": "informational",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 2",
+      "grouping": "pairs",
+      "estimated_time_minutes_min": 10,
+      "estimated_time_minutes_max": 15,
+      "instructional_moves": [
+        "Teacher presents 2-3 text-dependent questions similar to those on standardized assessments.",
+        "Pairs identify: what the question asks, what evidence is needed, and what a strong answer would include.",
+        "Pairs draft a constructed-response paragraph answering one TDQ with textual evidence.",
+        "Class reviews sample strong and weak responses, identifying what makes them effective or not.",
+        "Teacher names this as a test-adjacent genre, distinct from open inquiry."
+      ],
+      "output_product": "A constructed-response paragraph answering a TDQ with textual evidence and a brief reflection on what makes it strong.",
+      "contraindications": [
+        "Not suitable as the sole mode of inquiry in a critical inquiry unit.",
+        "Avoid overuse; this is one genre among others."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "CI_TEST_02",
+      "tactic_name": "Evidence Citation Drill with Critical Texts",
+      "phase": "guided_practice",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 8,
+      "estimated_time_minutes_max": 12,
+      "instructional_moves": [
+        "Teacher models how to cite textual evidence in a claim-evidence-reasoning format using a critical text.",
+        "Students practice writing 2-3 claim-evidence sentences from a short excerpt.",
+        "Teacher provides quick feedback on citation format and relevance of evidence.",
+        "Students revise one sentence to improve clarity and alignment between claim and evidence.",
+        "Teacher frames this as a test-adjacent skill that can serve critical inquiry."
+      ],
+      "output_product": "2-3 claim-evidence sentences with textual citations, plus one revised sentence.",
+      "contraindications": [
+        "Not suitable as a standalone critical inquiry task.",
+        "Avoid if students lack basic understanding of claim and evidence."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "CI_TEST_03",
+      "tactic_name": "Theme and Main Idea Triangulation",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 2",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 12,
+      "estimated_time_minutes_max": 18,
+      "instructional_moves": [
+        "Teacher models how to identify theme or main idea using evidence from multiple parts of a text.",
+        "Small groups identify 2-3 possible themes or main ideas for a short text.",
+        "Groups select the strongest theme and gather 2-3 pieces of evidence supporting it.",
+        "Groups write a test-style constructed response stating the theme and citing evidence.",
+        "Class discusses how theme identification can coexist with more open critical inquiry."
+      ],
+      "output_product": "A test-style constructed response stating a theme with textual evidence.",
+      "contraindications": [
+        "Not suitable as the only mode of reading in a critical inquiry unit.",
+        "Avoid if texts are too complex for theme identification without heavy scaffolding."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "CI_TEST_04",
+      "tactic_name": "Rhetorical Analysis Item Builder",
+      "phase": "independent_practice",
+      "text_type": "informational",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher models how to analyze an author's rhetorical choices.",
+        "Students select a short speech, op-ed, or public document.",
+        "Students write 2-3 test-style multiple-choice or short-answer items asking about rhetorical choices.",
+        "Students draft a constructed-response paragraph analyzing one key rhetorical strategy.",
+        "Optional: students exchange items and attempt each other's questions."
+      ],
+      "output_product": "2-3 test-style items plus a constructed-response paragraph analyzing a rhetorical strategy.",
+      "contraindications": [
+        "Not suitable when students lack basic rhetorical vocabulary.",
+        "Requires sufficient time for item writing and analysis."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "neutral_descriptive"
+    },
+    {
+      "tactic_id": "CI_AESTH_01",
+      "tactic_name": "Aesthetic Response Journal",
+      "phase": "independent_practice",
+      "text_type": "literary",
+      "scaffold_level": "low",
+      "cognitive_demand": "DOK 2",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 10,
+      "estimated_time_minutes_max": 20,
+      "instructional_moves": [
+        "Teacher invites students to read a poem, story excerpt, or passage primarily for aesthetic response.",
+        "Students journal about: where they felt tension, surprise, pleasure, discomfort; what images or sounds stood out; what the text made them imagine.",
+        "Students identify 1-2 craft choices that contributed to their response.",
+        "Optional: students share selected entries in pairs or small groups.",
+        "Teacher frames this as a valid ELA practice that may coexist with critical analysis."
+      ],
+      "output_product": "An aesthetic response journal entry noting affective responses and linked craft choices.",
+      "contraindications": [
+        "Not suitable when the sole target is ideological or power analysis.",
+        "Requires a text with sufficient aesthetic richness."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "CI_AESTH_02",
+      "tactic_name": "Craft-to-Effect Imitation",
+      "phase": "independent_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "individual",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher models how a specific craft choice creates an effect in a short text.",
+        "Students select a short passage and identify one craft pattern to imitate.",
+        "Students write an original short piece imitating that craft pattern.",
+        "Students write a brief reflection: what effect were they trying to create, and how did the craft pattern help?",
+        "Optional: share imitations in small groups to compare effects."
+      ],
+      "output_product": "An original short piece imitating a craft pattern plus a brief reflection on intended effect.",
+      "contraindications": [
+        "Not suitable when the primary target is strict textual analysis without creative response.",
+        "Requires time for writing and reflection."
+      ],
+      "grade_band": "9-12",
+      "formative_check": false,
+      "framing_stance": "open_exploratory"
+    },
+    {
+      "tactic_id": "CI_AESTH_03",
+      "tactic_name": "Beauty and Power Tension Map",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher introduces the idea that texts can be aesthetically powerful and ideologically complicated.",
+        "Small groups identify moments in a text that are beautiful, moving, or formally striking.",
+        "Groups also identify moments that construct power, identity, or norm in problematic or contested ways.",
+        "Groups create a 'Beauty and Power Tension Map' noting where aesthetic and ideological responses align or conflict.",
+        "Class discusses how to hold both aesthetic appreciation and critical critique."
+      ],
+      "output_product": "A Beauty and Power Tension Map showing at least three moments where aesthetic and ideological responses interact.",
+      "contraindications": [
+        "Not suitable when the text lacks aesthetic or ideological complexity.",
+        "Requires students to be comfortable with ambiguity and tension."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_AESTH_04",
+      "tactic_name": "Aesthetic-to-Critical Bridge",
+      "phase": "guided_practice",
+      "text_type": "literary",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Students first journal an aesthetic response to a text.",
+        "In small groups, students select one aesthetic moment and ask: how might this also construct power, identity, or norm?",
+        "Groups create a brief 'Aesthetic-to-Critical Bridge' note: aesthetic effect → possible ideological construction.",
+        "Class discusses how aesthetic and critical readings can inform each other without reducing one to the other.",
+        "Teacher names this as an explicitly critical move and invites alternative interpretations."
+      ],
+      "output_product": "An Aesthetic-to-Critical Bridge note linking at least one aesthetic effect to a possible ideological construction.",
+      "contraindications": [
+        "Not suitable when the goal is purely aesthetic reading without critical extension.",
+        "Requires students to have some familiarity with critical lenses."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_INQ_01",
+      "tactic_name": "Source Tension Triad",
+      "phase": "guided_practice",
+      "text_type": "multimodal",
+      "scaffold_level": "medium",
+      "cognitive_demand": "DOK 3",
+      "grouping": "small_groups",
+      "estimated_time_minutes_min": 15,
+      "estimated_time_minutes_max": 25,
+      "instructional_moves": [
+        "Teacher presents three sources related to one problem.",
+        "Small groups identify what each source reveals and what it cannot establish alone.",
+        "Groups map how the sources confirm, complicate, contradict, or reframe one another.",
+        "Groups draft a provisional claim based on the triad and note one ethical or epistemic limit.",
+        "Class shares claims and discusses how source tension shaped their interpretations."
+      ],
+      "output_product": "A Source Tension Triad map and a provisional claim with an ethical or epistemic limit.",
+      "contraindications": [
+        "Not suitable when only one source is available or when sources are too complex without scaffolding.",
+        "Requires careful source selection to ensure meaningful tension."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "explicitly_critical"
+    },
+    {
+      "tactic_id": "CI_INQ_02",
+      "tactic_name": "3-Turn Claim Revision Rehearsal",
+      "phase": "direct_instruction",
+      "text_type": "literary",
+      "scaffold_level": "high",
+      "cognitive_demand": "DOK 3",
+      "grouping": "whole_class",
+      "estimated_time_minutes_min": 10,
+      "estimated_time_minutes_max": 15,
+      "instructional_moves": [
+        "Teacher models the 3-Turn Claim Revision Model using a short text.",
+        "Class co-constructs a second 3-turn cycle with teacher scaffolding.",
+        "Students in pairs practice a third 3-turn cycle with a new excerpt or question.",
+        "Pairs share their revised claims and limits with the class.",
+        "Teacher emphasizes that revision is a core disciplinary practice in ELA."
+      ],
+      "output_product": "A written 3-turn claim revision cycle.",
+      "contraindications": [
+        "Not suitable when the learning target is purely generative or creative without claim formation.",
+        "Requires a text or question that supports multiple interpretations."
+      ],
+      "grade_band": "9-12",
+      "formative_check": true,
+      "framing_stance": "open_exploratory"
+    },
+     {
+    "tactic_id": "CI_RT_01",
+    "tactic_name": "Reciprocal Teaching Cycle",
+    "phase": "guided_practice",
+    "text_type": "informational",
+    "scaffold_level": "medium",
+    "cognitive_demand": "DOK 3",
+    "grouping": "small_groups",
+    "estimated_time_minutes_min": 20,
+    "estimated_time_minutes_max": 30,
+    "instructional_moves": [
+      "Teacher models four roles: predict, question, clarify, summarize.",
+      "In small groups, students rotate roles while reading a short informational text.",
+      "Each role produces a visible artifact (prediction, question set, clarification notes, summary).",
+      "Teacher circulates, names strong moves, and links to the day's inquiry."
+    ],
+    "output_product": "A group-produced set of predictions, questions, clarifications, and summaries tied to the text.",
+    "contraindications": [
+      "Do not use without prior modeling of the four roles.",
+      "Avoid with texts too short to support meaningful prediction and clarification."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "open_exploratory"
+  },
+  {
+    "tactic_id": "CI_QAR_01",
+    "tactic_name": "QAR Question-Answer Relationship Drill",
+    "phase": "guided_practice",
+    "text_type": "informational",
+    "scaffold_level": "medium",
+    "cognitive_demand": "DOK 2",
+    "grouping": "pairs",
+    "estimated_time_minutes_min": 12,
+    "estimated_time_minutes_max": 18,
+    "instructional_moves": [
+      "Teacher introduces four QAR types: Right There, Think and Search, Author and Me, On My Own.",
+      "Pairs classify sample questions by QAR type and justify with evidence.",
+      "Pairs write one question of each type for a short excerpt and trade with another pair to answer.",
+      "Class discusses which QAR types best serve the day's inquiry."
+    ],
+    "output_product": "A set of four classified questions (one per QAR type) with answers and justifications.",
+    "contraindications": [
+      "Do not use without explicit modeling of QAR categories.",
+      "Avoid with texts lacking sufficient detail for 'Think and Search' or 'Author and Me' questions."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "neutral_descriptive"
+  },
+  {
+    "tactic_id": "CI_KWL_01",
+    "tactic_name": "KWL+ Critical Extension",
+    "phase": "warm_up",
+    "text_type": "informational",
+    "scaffold_level": "low",
+    "cognitive_demand": "DOK 2",
+    "grouping": "individual",
+    "estimated_time_minutes_min": 8,
+    "estimated_time_minutes_max": 12,
+    "instructional_moves": [
+      "Students complete K (Know) and W (Want to know) for the day's topic.",
+      "After reading or inquiry, students complete L (Learned) and + (What new questions or actions emerge?).",
+      "Teacher collects KWL+ sheets to inform next steps and differentiate support."
+    ],
+    "output_product": "A completed KWL+ chart linking prior knowledge, questions, learning, and next inquiry/action.",
+    "contraindications": [
+      "Do not treat KWL as a one-off; use iteratively across a unit.",
+      "Avoid if students need more scaffolding to distinguish 'Know' from 'Want'."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "open_exploratory"
+  },
+  {
+    "tactic_id": "CI_1Q3R_01",
+    "tactic_name": "1Q3R Reading Routine",
+    "phase": "independent_practice",
+    "text_type": "informational",
+    "scaffold_level": "medium",
+    "cognitive_demand": "DOK 2",
+    "grouping": "individual",
+    "estimated_time_minutes_min": 20,
+    "estimated_time_minutes_max": 30,
+    "instructional_moves": [
+      "Students generate one guiding question before reading.",
+      "Students read a section, then recite key ideas in their own words.",
+      "Students review by checking their recitation against the text and revising notes.",
+      "Teacher conferences briefly to check question quality and note revisions."
+    ],
+    "output_product": "A one-page note with a guiding question, recited summary, and reviewed/corrected notes.",
+    "contraindications": [
+      "Do not use with texts too short to support meaningful recitation and review.",
+      "Avoid if students lack basic summarization skills without additional scaffolding."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "neutral_descriptive"
+  },
+  {
+    "tactic_id": "CI_ETX_01",
+    "tactic_name": "ETX Experience-Text-Connection Protocol",
+    "phase": "guided_practice",
+    "text_type": "literary",
+    "scaffold_level": "medium",
+    "cognitive_demand": "DOK 3",
+    "grouping": "pairs",
+    "estimated_time_minutes_min": 15,
+    "estimated_time_minutes_max": 20,
+    "instructional_moves": [
+      "Teacher introduces ETX: connect prior experience or knowledge to the text, then extend to a broader connection.",
+      "Pairs identify one experience/knowledge connection and one broader thematic or systemic connection.",
+      "Pairs write a brief claim linking ETX to the day's inquiry question.",
+      "Class shares patterns and links to the EQ."
+    ],
+    "output_product": "A pair-written ETX note with one experiential connection, one broader connection, and a claim tied to the inquiry.",
+    "contraindications": [
+      "Do not require personal disclosure; allow hypothetical or textual 'experience' proxies.",
+      "Avoid with texts where experiential connections are too opaque without scaffolding."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "open_exploratory"
+  },
+  {
+    "tactic_id": "CI_TPS_01",
+    "tactic_name": "Think-Pair-Share with Evidence",
+    "phase": "warm_up",
+    "text_type": "literary",
+    "scaffold_level": "low",
+    "cognitive_demand": "DOK 2",
+    "grouping": "pairs",
+    "estimated_time_minutes_min": 6,
+    "estimated_time_minutes_max": 10,
+    "instructional_moves": [
+      "Teacher poses a focused question tied to the text.",
+      "Students think and jot notes individually.",
+      "Students pair to compare ideas and select one evidence-based claim to share.",
+      "Class compiles claims and notes which evidence was most persuasive."
+    ],
+    "output_product": "A pair-selected evidence-based claim ready for whole-class share.",
+    "contraindications": [
+      "Do not use with overly broad questions; keep the prompt narrowly focused.",
+      "Avoid if students need more scaffolding to select textual evidence."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "open_exploratory"
+  },
+  {
+    "tactic_id": "CI_JIG_01",
+    "tactic_name": "Jigsaw Content Expertise",
+    "phase": "guided_practice",
+    "text_type": "informational",
+    "scaffold_level": "medium",
+    "cognitive_demand": "DOK 3",
+    "grouping": "small_groups",
+    "estimated_time_minutes_min": 25,
+    "estimated_time_minutes_max": 35,
+    "instructional_moves": [
+      "Teacher divides a complex text or topic into 3-4 expert sections.",
+      "Expert groups master their section and prepare a brief teach-back.",
+      "Students regroup so each new group has one expert per section.",
+      "Experts teach their section; group synthesizes a unified summary."
+    ],
+    "output_product": "A group-produced unified summary integrating all expert sections.",
+    "contraindications": [
+      "Do not use with too many sections; limit to 3-4 for manageability.",
+      "Ensure all sections are accessible enough for expert-group analysis."
+    ],
+    "grade_band": "9-12",
+    "formative_check": true,
+    "framing_stance": "neutral_descriptive"
+  },
+  {
+    "tactic_id": "CI_SOC_01",
+    "tactic_name": "Socratic Seminar (Open Inquiry)",
+    "phase": "guided_practice",
+    "text_type": "literary",
+    "scaffold_level": "high",
+    "cognitive_demand": "DOK 4",
+    "grouping": "whole_class",
+    "estimated_time_minutes_min": 35,
+    "estimated_time_minutes_max": 45,
+    "instructional_moves": [
+      "Teacher poses an open-ended seminar question without a critical lens frame.",
+      "Students discuss using textual evidence and seminar norms.",
+      "Teacher facilitates and tracks argument moves without prescribing a critical stance.",
+      "Class reflects on claim shifts and discussion quality."
+    ],
+    "output_product": "A whole-class discussion with tracked argument moves and a reflection on claim shifts.",
+    "contraindications": [
+      "Do not use with texts that are too short or lack complexity for sustained discussion.",
+      "Ensure students have prior practice with Socratic norms."
+    ],
+    "grade_band": "11-12",
+    "formative_check": true,
+    "framing_stance": "open_exploratory"
+  }
+  ]
+}
