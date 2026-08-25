@@ -1,6 +1,6 @@
 \# CRITICAL INQUIRY AI KNOWLEDGE BASE
 
-\#\# Concepts, Frameworks, and Reusable Design Patterns (v2.0)
+\#\# Concepts, Frameworks, and Reusable Design Patterns (v3.0)
 
 This knowledge base supplies conceptual and procedural grounding for the Critical Inquiry AI Curriculum Engine. Retrieve relevant sections selectively rather than pasting the entire document into every generation.
 
@@ -12,15 +12,18 @@ The System Instructions govern behavior and priorities. The Knowledge Base suppl
 
 Retrieve the sections most relevant to the active task:
 
-\- Retrieve \*\*Foundational Framework\*\* for all unit and lesson generations.  
+\- Retrieve \*\*Foundational Framework\*\* and \*\*Beach, Thein, & Webb (BTW) Critical Inquiry in Secondary ELA\*\* for all unit and lesson generations.  
 \- Retrieve \*\*Text-Set Design Patterns\*\* when selecting or analyzing multiple sources.  
 \- Retrieve \*\*Critical Inquiry Lesson Patterns\*\* when structuring claim formation, comparison, discussion, or revision.  
 \- Retrieve \*\*Language and Literacy\*\* when generating vocabulary, syntax, sentence frames, or academic discourse supports.  
 \- Retrieve \*\*Critical Perspective Knowledge\*\* when selecting or operationalizing a lens.  
+\- Retrieve \*\*Disciplinary Practices in ELA\*\* when the learning target is craft/structure, writing process, test-adjacent skills, or aesthetic reading.  
 \- Retrieve \*\*Differentiation and Access\*\* when student needs or barriers are specified.  
 \- Retrieve \*\*Assessment Knowledge\*\* when designing artifacts, rubrics, or formative checks.  
 \- Retrieve \*\*Source Verification Knowledge\*\* whenever quotations, factual claims, contextual information, or archival materials are used.  
+\- Retrieve \*\*Standards Alignment Knowledge\*\* when the lesson claims alignment to CCSS, state, IB, or other standards frameworks.  
 \- Retrieve \*\*Action Design\*\* when the task includes a public, civic, community, or audience-facing response.  
+\- Retrieve \*\*Framing, Leading Language, and Critical Stance\*\* when reviewing or generating say-scripts and task prompts.  
 \- Do not retrieve every pattern indiscriminately. Select only the knowledge that serves the active cognitive task.
 
 \---
@@ -39,6 +42,23 @@ Retrieve the sections most relevant to the active task:
 | Source tension | A meaningful relationship in which sources confirm, complicate, contradict, historicize, or reframe one another. |  
 | Student agency | Students generate, select, interpret, revise, or communicate knowledge rather than merely reproduce teacher-provided conclusions. |  
 | Epistemic authority | The socially or institutionally granted power to define what counts as knowledge, truth, evidence, or credibility. |
+
+\---
+
+\#\# Beach, Thein, & Webb (BTW) Critical Inquiry in Secondary ELA
+
+This engine draws on Richard Beach, Amanda Haertling Thein, and Allen Webb’s Critical Inquiry Approach in Secondary ELA, which organizes inquiry around three interconnected dimensions:
+
+\- \*\*Justice\*\*: Attention to identity, equity, power, representation, voice, material conditions, and consequences in and through ELA.  
+\- \*\*Inquiry\*\*: Students generate questions; investigate evidence from literary, informational, and multimodal texts; compare perspectives; construct knowledge; and revise claims.  
+\- \*\*Action\*\*: Students communicate or apply learning to authentic audiences or meaningful responses, with ethical limits.
+
+BTW emphasize that critical inquiry in ELA is not only about ideology; it is also about \*\*disciplinary practices\*\*: close reading of craft and structure, writerly decision-making, genre knowledge, and authentic forms of response (essays, multimodal compositions, performances, civic texts).
+
+In this engine:
+
+\- Justice–Inquiry–Action is the spine.  
+\- ELA disciplinary practices (craft, writing process, test-adjacent skills, aesthetic reading) are the limbs through which that spine moves.
 
 \---
 
@@ -243,9 +263,126 @@ What this lens may obscure:
 
 \---
 
+\#\# Disciplinary Practices in ELA
+
+Critical inquiry in secondary ELA moves through multiple disciplinary practices. This section defines four modules that the engine can activate depending on the learning target.
+
+\#\#\# 1\. Craft and Structure Close Reading
+
+Critical inquiry in ELA includes attention to how authors construct meaning through craft and structure, not only what texts say about power.
+
+\#\#\#\# Focus areas
+
+\- Narrative structure (point of view, pacing, order, framing).  
+\- Figurative language (metaphor, symbol, imagery, irony).  
+\- Syntax and sentence craft (parallelism, fragmentation, modality).  
+\- Sound and rhythm (alliteration, assonance, meter, line breaks).  
+\- Genre conventions and deviations.  
+\- Rhetorical choices (diction, tone, arrangement, audience positioning).
+
+\#\#\#\# Inquiry prompts
+
+\- How does this structural or rhetorical choice shape meaning?  
+\- What patterns do you notice? How do they develop or shift?  
+\- How might a different choice (e.g., POV, tense, structure) change the reader’s experience?  
+\- How does form interact with content (e.g., how does structure reinforce or complicate theme)?
+
+\#\#\#\# Relationship to critical inquiry
+
+Craft analysis can:
+
+\- Stand alone as an aesthetic or formalist inquiry.  
+\- Serve critical inquiry by showing \*\*how\*\* power, identity, or ideology is constructed through form.  
+\- Coexist with other lenses (e.g., “We’ll first notice patterns of craft; then we’ll ask how those patterns construct power.”).
+
+\#\#\# 2\. Writing Process and Genre Knowledge
+
+Critical inquiry in ELA includes sustained attention to writing as a process and to genre knowledge, not only final products.
+
+\#\#\#\# Process phases
+
+\- Prewriting: brainstorming, questioning, mapping, gathering evidence.  
+\- Drafting: getting ideas down, experimenting with structure and voice.  
+\- Revising: re-seeing structure, argument, narrative arc, craft.  
+\- Editing: sentence-level clarity, conventions, style.  
+\- Publishing/Sharing: selecting audiences and formats.
+
+\#\#\#\# Genres
+
+\- Argumentative (claims, evidence, reasoning, counterclaims).  
+\- Informational/explanatory (analysis, synthesis, exposition).  
+\- Narrative (personal, fictional, hybrid).  
+\- Multimodal (digital, visual, audio, performative).  
+\- Civic/public (letters, op-eds, policy briefs, manifests, zines).
+
+\#\#\#\# Inquiry prompts
+
+\- How do genre conventions shape what I can say and how I say it?  
+\- How does my purpose and audience influence my choices?  
+\- How does my writing change from draft to draft, and why?  
+\- How do I balance my voice with genre expectations?
+
+\#\#\#\# Relationship to critical inquiry
+
+Writing process work can:
+
+\- Explore justice issues through genre (e.g., counter-narratives, policy briefs).  
+\- Focus on craft and voice without explicit power analysis.  
+\- Combine both (e.g., “Write a counter-narrative that uses specific craft moves to challenge a dominant story.”).
+
+\#\#\# 3\. Test-Adjacent Skill Building
+
+Critical inquiry in ELA can coexist with explicit attention to skills that appear in CCSS-aligned assessments and standardized tests.
+
+\#\#\#\# Focus skills
+
+\- Citing textual evidence to support claims.  
+\- Determining theme or main idea.  
+\- Analyzing author’s purpose and craft.  
+\- Interpreting figurative language and tone.  
+\- Comparing texts and perspectives.  
+\- Writing clear, organized analytical paragraphs and essays.
+
+\#\#\#\# Design principles
+
+\- Teach skills \*\*through\*\* rich texts and inquiry, not as isolated drills.  
+\- Use test-adjacent formats (e.g., constructed-response paragraphs, text-dependent questions) as \*\*one\*\* genre among others.  
+\- Name the genre: “This is a test-style question; here’s how it works; here’s how it differs from our usual inquiry tasks.”
+
+\#\#\#\# Relationship to critical inquiry
+
+Test-adjacent work can:
+
+\- Use critical texts (e.g., speeches, essays on justice).  
+\- Ask critical questions (e.g., “How does the author construct power?”) in a test-style format.  
+\- Coexist with deeper inquiry units without dominating them.
+
+\#\#\# 4\. Aesthetic Reading
+
+Critical inquiry in ELA includes space for aesthetic reading: approaching literature primarily for its form, beauty, affect, and experiential power, not only for ideology or power analysis.
+
+\#\#\#\# Focus questions
+
+\- How does this text move me? Where do I feel tension, surprise, pleasure, discomfort?  
+\- What patterns of sound, image, or structure create this effect?  
+\- How does the text invite me to imagine other worlds, experiences, or possibilities?  
+\- How might an aesthetic reading coexist with or complicate a critical reading?
+
+\#\#\#\# Relationship to critical inquiry
+
+Aesthetic reading can:
+
+\- Stand alone as a valid ELA practice.  
+\- Serve critical inquiry by showing how affect and form shape political or ethical responses.  
+\- Complicate critical readings (e.g., “I disagree with this text’s ideology, but I am moved by its beauty—what do I do with that?”).
+
+\---
+
 \#\# Differentiation and Access
 
 Differentiate access, not intellectual worth. Students may pursue the same conceptual goal through different supports, pathways, and forms of expression.
+
+UDL frames variability as the norm and designs for learner agency, identity, and strategic goal pursuit. Apply UDL as barrier analysis: identify barriers in the material, task, language, environment, or product, then offer pathways that preserve the intellectual target and expand learner agency.
 
 | Need or Barrier | Design Response |  
 |-----------------|-----------------|  
@@ -291,7 +428,11 @@ A strong critical inquiry assessment measures both interpretation and inquiry be
 | Inquiry process | Question log, source rationale, revision history. |  
 | Source evaluation | Verification record, authority analysis, source comparison. |  
 | Claim revision | Provisional claim, counter-evidence, revised claim, ethical limit. |  
-| Action | Audience-facing artifact, evidence record, feasibility analysis, reflection on impact and limits. |
+| Action | Audience-facing artifact, evidence record, feasibility analysis, reflection on impact and limits. |  
+| Craft analysis | Craft annotation, pattern map, craft-to-effect explanation. |  
+| Writing process | Prewriting notes, drafts, revision memos, writerly decision logs. |  
+| Test-adjacent skills | Constructed-response paragraphs, text-dependent question sets, item autopsies. |  
+| Aesthetic reading | Aesthetic response journals, creative imitations, craft-affect analyses. |
 
 \#\#\# Minimum micro-argument structure
 
@@ -308,11 +449,11 @@ When the task is argumentative, require:
 
 \#\# UDL and Access Principle
 
-Universal Design for Learning supports multiple means of engagement, representation, and action/expression. Apply UDL as barrier analysis:
+Universal Design for Learning (UDL) frames variability as the norm and designs for learner agency, identity, and strategic goal pursuit. Apply UDL as barrier analysis:
 
 1\. Identify the barrier.  
 2\. Determine whether it arises from the material, task, language, environment, or product.  
-3\. Provide a pathway that preserves the intellectual target.  
+3\. Provide a pathway that preserves the intellectual target and expands learner agency.  
 4\. Check whether the pathway actually improves access.  
 5\. Retain evidence of the student’s disciplinary thinking.
 
@@ -354,6 +495,55 @@ For every source used in teacher or student-facing materials, record:
 \- State what each source can and cannot establish.  
 \- Distinguish primary source, secondary source, adaptation, translation, transcript, commentary, and teacher-created excerpt.  
 \- Preserve enough metadata for another teacher to locate and verify the source.
+
+\---
+
+\#\# Standards Alignment Knowledge
+
+This engine does not embed a full standards bank. Instead, it follows a Standards Resolution Protocol:
+
+\#\#\# Standards Resolution Protocol
+
+1\. \*\*User-supplied standards (preferred)\*\*    
+   \- If the user provides explicit standards (e.g., CCSS codes and descriptions, state standards, IB objectives), treat these as the authoritative standards for this task.    
+   \- Record them in the Standards Alignment Record.    
+   \- Design the lesson so that the assessment artifact directly measures the disciplinary action required by those standards.
+
+2\. \*\*User requests standards suggestions\*\*    
+   \- If the user asks the engine to propose applicable standards (e.g., “Suggest CCSS for this lesson”), the engine may:    
+     \- Use internal knowledge of CCSS ELA strands (Reading, Writing, Speaking & Listening, Language) to propose 2–5 candidate standards appropriate to the grade, text type, and task.    
+     \- Clearly label these as \*\*AI-proposed standards (unverified)\*\*.    
+     \- Advise the user to verify against the official CCSS text or their local standards framework.    
+   \- Do not present AI-proposed standards as authoritative or final.
+
+3\. \*\*No standards provided and none requested\*\*    
+   \- If the user does not supply standards and does not request suggestions, the engine may:    
+     \- Design the lesson using the constructive alignment chain (standard → objective → EQ → CIQ → instruction → artifact → success criteria) with a \*\*placeholder standard description\*\* (e.g., “Reading literature: cite evidence, determine theme, analyze authorial choices”).    
+     \- Explicitly note in the Standards Alignment Record that \*\*no specific standard codes are assigned\*\* and that a human must map this to local standards before deployment.
+
+4\. \*\*Use of external standards sources (e.g., thecorestandards.org)\*\*    
+   \- If the environment supports web search or retrieval of CCSS text, the engine may search for candidate standards when:    
+     \- The user requests CCSS alignment, and    
+     \- The grade/course and task type are specified.    
+   \- Any standards retrieved from external sources must be:    
+     \- Quoted accurately (no paraphrase of the standard code or description).    
+     \- Labeled with source (e.g., “CCSS.ELA-LITERACY.RL.11-12.1, thecorestandards.org”).    
+     \- Marked as \*\*teacher-verified\*\* or \*\*unverified\*\* depending on whether the user confirms them.
+
+5\. \*\*Standards Alignment Record (required whenever standards are referenced)\*\*    
+   \- For any lesson or unit that references standards, include a Standards Alignment Record with:    
+     \- Standard code(s) and full description.    
+     \- Source (e.g., CCSS official text, state framework, IB guide, or “AI-proposed, unverified”).    
+     \- Disciplinary action required by the standard.    
+     \- How the lesson’s assessment artifact measures that action.    
+     \- Verification status: \`teacher-verified\` or \`unverified\`.
+
+6\. \*\*Conflict rule\*\*    
+   \- If there is a conflict between:    
+     \- User-supplied standards, and    
+     \- AI-proposed or retrieved standards,    
+     the user-supplied standards take precedence.    
+   \- Record the conflict and proceed with the user-supplied standards.
 
 \---
 
@@ -400,6 +590,30 @@ Public action is not automatically superior to private or classroom-based action
 
 \---
 
+\#\# Framing, Leading Language, and Critical Stance
+
+Critical inquiry lessons will sometimes use leading or presuppositional language by design (e.g., “notice how this language constructs \_\_\_ as normal”). This is not a bug; it is a feature of critical pedagogy.
+
+To honor student agency and the “no forced conclusion” rule:
+
+\- \*\*Name the lens\*\*: Tell students which critical lens or frame you are using and why.  
+\- \*\*Invite contestation\*\*: Ask students to use evidence to support, complicate, or challenge the frame.  
+\- \*\*Distinguish frame from verdict\*\*: A frame (e.g., “we’re looking for bias”) is not the same as a predetermined conclusion (“this is biased against X”).  
+\- \*\*Use alternative frames\*\*: When appropriate, show how a different lens (e.g., aesthetic, formalist, rhetorical) would read the same text.  
+\- \*\*Review say-scripts\*\*: Before classroom use, review say-scripts for language that enforces a single political or epistemic conclusion without room for evidence-based disagreement.
+
+\#\#\# Framing stance categories for tactics
+
+Tactics may carry a \`framing\_stance\` field:
+
+\- \`explicitly\_critical\`: Designed to foreground power, ideology, or justice.  
+\- \`open\_exploratory\`: Invites multiple interpretations without presupposing a critical stance.  
+\- \`neutral\_descriptive\`: Focuses on description or craft without explicit power framing.
+
+Leading or presuppositional language should appear primarily in \`explicitly\_critical\` tactics and should be named as such.
+
+\---
+
 \#\# AI-Specific Design Ethics
 
 The AI curriculum engine is a design assistant, not an autonomous curriculum authority.
@@ -433,4 +647,4 @@ When multiple Knowledge Base patterns apply:
 
 \---
 
-\*Critical Inquiry AI Curriculum Engine | Knowledge Base v2.0\*  
+\*Critical Inquiry AI Curriculum Engine | Knowledge Base v3.0\*  

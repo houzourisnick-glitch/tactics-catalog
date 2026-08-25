@@ -1,6 +1,6 @@
 \# CRITICAL INQUIRY AI QUALITY ASSURANCE CHECKLIST
 
-\#\# Pre-Release Validation for Units and Lessons (v2.0)
+\#\# Pre-Release Validation for Units and Lessons (v3.0)
 
 Use this checklist after generation and before classroom deployment. A plan must not be released when a critical requirement fails.
 
@@ -28,7 +28,8 @@ Do not leave a status blank.
 | Schedule validated | The lesson duration is explicitly declared and phase durations are provided. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Grade/context fit | The plan matches the requested students, course, grade, and developmental level. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Phase minutes sum to declared period | The sum of all phase durations exactly equals the declared lesson length. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
-| Required materials identified | Texts, excerpts, media, technology, surfaces, and student materials are listed. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |
+| Required materials identified | Texts, excerpts, media, technology, surfaces, and student materials are listed. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Lesson type identified | The lesson is identified as critical inquiry or disciplinary-practice-focused (craft, writing process, test-adjacent, aesthetic). | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |
 
 \---
 
@@ -39,10 +40,23 @@ Do not leave a status blank.
 | Standard measurable | Each standard is translated into an observable disciplinary action. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Objective assessable | The objective can be demonstrated through an artifact, performance, or documented process. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | EQ open-ended | The Essential Question frames a durable problem rather than a factual answer. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
-| CIQ text-specific | The Critical Inquiry Question requires interpretation of the selected text set. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| CIQ text-specific or practice-specific | The Critical Inquiry Question requires interpretation of the selected text set or disciplinary practice. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Instruction aligned | Instructional moves directly develop the stated objective and disciplinary action. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Artifact aligned | The assessment directly measures the objective and standard. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Success criteria explicit | Students can identify what makes the work adequate, strong, or exemplary. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |
+
+\---
+
+\#\# B1. STANDARDS ALIGNMENT
+
+| Check | Pass condition | Status |  
+|-------|----------------|--------|  
+| Standards source identified | Standards are either user-supplied, AI-proposed (unverified), or retrieved from an external source with citation. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Disciplinary action clear | The disciplinary action required by each standard is explicitly stated. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Assessment measures the standard | The assessment artifact directly measures the disciplinary action required by the standard. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| AI-proposed standards labeled | Any AI-proposed or retrieved standards are labeled as \`unverified\` until teacher-confirmed. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| No silent standards drift | The lesson does not claim alignment to standards that are not referenced in the Standards Alignment Record. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Standards Alignment Record present | When standards are referenced, a Standards Alignment Record is included with code(s), description, source, disciplinary action, assessment alignment, and verification status. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |
 
 \---
 
@@ -50,7 +64,8 @@ Do not leave a status blank.
 
 | Check | Pass condition | Status |  
 |-------|----------------|--------|  
-| Justice problem present | Power, identity, equity, representation, voice, material conditions, or responsibility is meaningfully engaged. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Justice problem present (for critical inquiry lessons) | Power, identity, equity, representation, or responsibility is meaningfully engaged. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Justice problem optional (for disciplinary-practice-focused lessons) | If the lesson is explicitly labeled as craft, writing process, test-adjacent, or aesthetic, absence of a justice problem is acceptable. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Genuine source tension | A secondary source confirms, complicates, contradicts, historicizes, or reframes the anchor. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Source relationship explained | The plan states what each source reveals and what it cannot establish alone. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Provisional claim present | Students form a defensible working claim before or during evidence gathering. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
@@ -128,6 +143,18 @@ Do not leave a status blank.
 
 \---
 
+\#\# G1. SAY-SCRIPT FRAMING AND OPENNESS
+
+| Check | Pass condition | Status |  
+|-------|----------------|--------|  
+| Say-script framing matches tactic stance | Scripts align with the tactic’s \`framing\_stance\` (\`explicitly\_critical\`, \`open\_exploratory\`, \`neutral\_descriptive\`). | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Critical stance is named, not hidden | When scripts presuppose a critical frame (e.g., power, bias, hegemony), the script or teacher notes name that frame rather than presenting it as neutral fact. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Alternative interpretations are structurally possible | The task design allows students to construct alternative readings using evidence; no single political or epistemic conclusion is enforced as the only valid answer. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Leading language is intentional, not accidental | Leading or presuppositional language appears only in tactics with \`framing\_stance: explicitly\_critical\` or in teacher-approved custom scripts, not in neutral or open-exploratory tactics. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Framing Transparency Note present (when applicable) | When explicitly critical frames are used, a Framing Transparency Note names the frame, states that alternatives are possible, and invites evidence-based contestation. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |
+
+\---
+
 \#\# H. SENSITIVITY AND SAFEGUARDING
 
 Trigger this section when an anchor text, secondary source, image, data set, or prompt involves:
@@ -159,13 +186,15 @@ Every selected tactic must come from the authorized Tactics Catalog and must con
 |-------|----------------|--------|  
 | Authorized tactic used | Every selected tactic appears in the authorized catalog. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Unique tactic ID present | Each tactic has a unique \`tactic\_id\`. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
-| Required fields present | Each selected tactic contains \`tactic\_id\`, \`tactic\_name\`, \`phase\`, \`text\_type\`, \`scaffold\_level\`, \`cognitive\_demand\`, \`grouping\`, \`estimated\_time\_minutes\`, \`instructional\_moves\`, \`output\_product\`, and \`contraindications\`. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Required fields present | Each selected tactic contains \`tactic\_id\`, \`tactic\_name\`, \`phase\`, \`text\_type\`, \`scaffold\_level\`, \`cognitive\_demand\`, \`grouping\`, \`estimated\_time\_minutes\_min\`, \`estimated\_time\_minutes\_max\`, \`instructional\_moves\`, \`output\_product\`, \`contraindications\`, \`grade\_band\`, \`formative\_check\`, and \`framing\_stance\`. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Grade-band compatibility | The tactic’s \`grade\_band\` matches the requested grade. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Phase compatibility | The tactic’s \`phase\` matches the instructional phase in which it is used. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Text-type compatibility | The tactic’s declared \`text\_type\` matches the text or artifact being analyzed. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Scaffold compatibility | The tactic’s scaffold level is appropriate for the students and task. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Cognitive-demand compatibility | The tactic’s cognitive demand supports the objective and intended DOK level. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Grouping compatibility | The selected grouping is feasible and supports the cognitive work. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
-| Time compatibility | The tactic’s estimated time is compatible with the declared lesson schedule. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Time compatibility | The tactic’s estimated time range is compatible with the declared lesson schedule. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
+| Formative-check spacing | At least one tactic with \`formative\_check: true\` occurs within every 20-minute instructional window. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Instructional moves executed | The lesson integrates the tactic’s required instructional moves rather than merely naming the tactic. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | SAY/DO translation complete | Relevant tactic moves are translated into explicit teacher \`SAY:\` and \`DO:\` blocks. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
 | Output alignment | The tactic’s \`output\_product\` matches the lesson artifact or observable student behavior. | \`PASS / WARNING / FAIL / NOT\_APPLICABLE\` |  
@@ -213,10 +242,22 @@ A plan must not be released until all critical failures are resolved.
 
 \- A selected tactic is not present in the authorized catalog.  
 \- A selected tactic is missing required schema fields.  
-\- A tactic is used outside its phase, text type, timing, or grouping constraints without justification.  
+\- A tactic is used outside its phase, text type, timing, grouping, or grade-band constraints without justification.  
 \- Required instructional moves are omitted.  
 \- The tactic’s output product does not align with the lesson artifact.  
 \- A listed contraindication is ignored without explicit justification.
+
+\#\#\# Critical standards-alignment failures
+
+\- The lesson claims standards alignment but has no Standards Alignment Record.  
+\- The assessment does not measure the disciplinary action required by the stated standard.  
+\- AI-proposed standards are presented as authoritative without an \`unverified\` label.
+
+\#\#\# Critical framing-transparency failures
+
+\- A tactic with \`framing\_stance\` "neutral\_descriptive" or "open\_exploratory" contains say-scripts that presuppose a single political or epistemic conclusion.  
+\- A lesson’s say-scripts enforce a single conclusion without allowing evidence-based alternative interpretations.  
+\- Explicitly critical frames are used without a Framing Transparency Note.
 
 \---
 
@@ -267,4 +308,5 @@ Before classroom use, the teacher remains responsible for:
 
 \---
 
-\*Critical Inquiry AI Curriculum Engine | Quality Assurance Checklist v2.0\*  
+\*Critical Inquiry AI Curriculum Engine | Quality Assurance Checklist v3.0\*
+
