@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Critical Inquiry Tactics Catalog Schema",
+  "type": "object",
+  "required": ["catalog_metadata", "tactics"],
+  "properties": {
+    "catalog_metadata": {
+      "type": "object",
+      "required": ["title", "version", "description", "last_updated", "schema_version"],
+      "properties": {
+        "title": { "type": "string" },
+        "version": { "type": "string" },
+        "description": { "type": "string" },
+        "last_updated": { "type": "string" },
+        "schema_version": { "type": "string" },
+        "changelog": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "schema_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "tactics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tactic_id",
+          "tactic_name",
+          "phase",
+          "text_type",
+          "scaffold_level",
+          "cognitive_demand",
+          "grouping",
+          "estimated_time_minutes_min",
+          "estimated_time_minutes_max",
+          "instructional_moves",
+          "output_product",
+          "contraindications",
+          "grade_band",
+          "formative_check",
+          "framing_stance"
+        ],
+        "properties": {
+          "tactic_id": { 
+            "type": "string", 
+            "pattern": "^[a-z0-9_]+$" 
+          },
+          "tactic_name": { "type": "string" },
+          "phase": {
+            "type": "string",
+            "enum": ["warm_up", "direct_instruction", "guided_practice", "independent_practice", "closure"]
+          },
+          "text_type": {
+            "type": "string",
+            "enum": ["literary", "informational", "legal", "visual", "multimodal", "data", "craft_model"]
+          },
+          "scaffold_level": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "cognitive_demand": { "type": "string" },
+          "grouping": {
+            "type": "string",
+            "enum": ["individual", "pairs", "VRG_small", "whole_class", "standing_VNPS"]
+          },
+          "estimated_time_minutes_min": { "type": "integer", "minimum": 1 },
+          "estimated_time_minutes_max": { "type": "integer", "minimum": 1 },
+          "instructional_moves": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "output_product": { "type": "string" },
+          "contraindications": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "grade_band": { "type": "string" },
+          "formative_check": { "type": "boolean" },
+          "framing_stance": {
+            "type": "string",
+            "enum": ["explicitly_critical", "open_exploratory", "neutral_descriptive"]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
