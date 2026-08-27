@@ -1,5 +1,5 @@
 \# CRITICAL INQUIRY UNIT PLAN FRAMEWORK  
-\#\# Master Unit Design Template (v2.0)
+\#\# Master Unit Design Template (v3.0)
 
 Use this document to establish macro-level unit matrices, scope and sequences, and assessment tracking for curriculum initiatives\[cite: 12\].
 

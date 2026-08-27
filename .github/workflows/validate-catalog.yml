@@ -1,0 +1,39 @@
+name: Validate Tactics Catalog Schema
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install jsonschema
+
+      - name: Run Schema Validation
+        run: |
+          python -c "
+          import json
+          from jsonschema import validate
+
+          with open('tactic.schema.json', 'r', encoding='utf-8') as f:
+              schema = json.load(f)
+
+          with open('CI_TACTICS_CATALOG_v3.0.json', 'r', encoding='utf-8') as f:
+              catalog = json.load(f)
+
+          validate(instance=catalog, schema=schema)
+          print('Validation successful: Catalog matches schema.')
+          "

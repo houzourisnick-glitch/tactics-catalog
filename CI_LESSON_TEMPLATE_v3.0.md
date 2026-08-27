@@ -1,5 +1,5 @@
 \# CRITICAL INQUIRY LESSON PLAN TEMPLATE  
-\#\# System Prompt & Template (v2.0)
+\#\# System Prompt & Template (3.0)
 
 Use this document as a system prompt or custom template in TypingMind to generate fully articulated, highly structured ELA lesson plans.
 
@@ -190,4 +190,4 @@ Complete this section if bridging between connected multi-day lessons or unit se
 \* \[ \] \*\*Open New Questions:\*\* Ending lingering question leaves the inquiry cycle open for subsequent lessons\[cite: 14\].  
 \`\`\`\[cite: 14\]
 
-You can save this block as \`CI\_LESSON\_TEMPLATE\_v2.0.md\` and upload it directly into your TypingMind agent training files alongside your deployment guide, knowledge base, and QA checklist\[cite: 13, 14\]\!  
+You can save this block as \`CI\_LESSON\_TEMPLATE\_v3.0.md\` and upload it directly into your agent training files alongside your deployment guide, knowledge base, and QA checklist\[cite: 13, 14\]\!  
