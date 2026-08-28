@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Instructional Tactic Schema",
+  "type": "object",
+  "required": [
+    "tactic_id",
+    "tactic_name",
+    "phase",
+    "text_type",
+    "scaffold_level",
+    "cognitive_demand",
+    "grouping",
+    "estimated_time_minutes_min",
+    "estimated_time_minutes_max",
+    "instructional_moves",
+    "output_product",
+    "contraindications",
+    "grade_band",
+    "formative_check",
+    "framing_stance"
+  ],
+  "properties": {
+    "tactic_id": {
+      "type": "string"
+    },
+    "tactic_name": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "text_type": {
+      "type": "string"
+    },
+    "scaffold_level": {
+      "type": "string"
+    },
+    "cognitive_demand": {
+      "type": "string"
+    },
+    "grouping": {
+      "type": "string"
+    },
+    "estimated_time_minutes_min": {
+      "type": "integer"
+    },
+    "estimated_time_minutes_max": {
+      "type": "integer"
+    },
+    "instructional_moves": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_product": {
+      "type": "string"
+    },
+    "contraindications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "grade_band": {
+      "type": "string"
+    },
+    "formative_check": {
+      "type": "boolean"
+    },
+    "framing_stance": {
+      "type": "string",
+      "enum": [
+        "explicitly_critical",
+        "open_exploratory",
+        "neutral_descriptive"
+      ]
+    }
+  }
+}
