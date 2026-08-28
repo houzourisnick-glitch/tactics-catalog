@@ -57,3 +57,10 @@ Use this document to establish macro-level unit matrices, scope and sequences, a
 \* \*\*Text & Materials Deployment:\*\* Explicit texts and materials must be provided for students to access standards\[cite: 12\].  
 \* \*\*Scaffolding Strategy:\*\* Consider reading levels, scaffolds, schema activation, and background knowledge integration\[cite: 12\].  
 \* \*\*Pedagogical Integration:\*\* Strategic sequencing of related readings to build content vocabulary and provide critical thinking opportunities that scaffold appropriately to the summative assessment\[cite: 12\].  
+
+### Source Verification Table
+| Source Title | Author / Origin | Verification Status | Notes |
+| :--- | :--- | :--- | :--- |
+| [Insert Anchor Text] | [Author / Date] | teacher-verified | Primary source text for inquiry Arc 1 |
+
+<!-- formative_check: active -->
