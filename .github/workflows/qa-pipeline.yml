@@ -1,0 +1,54 @@
+name: Curriculum Design Engine CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  qa-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+
+      - name: Validate JSON Schema (Tactics Catalog)
+        run: |
+          python -c "
+          import json
+          from jsonschema import validate
+          
+          with open('tactic.schema.json') as sf:
+              schema = json.load(sf)
+          with open('tactics-catalog.json') as cf:
+              catalog = json.load(cf)
+              
+          for idx, tactic in enumerate(catalog):
+              try:
+                  validate(instance=tactic, schema=schema)
+              except Exception as e:
+                  print(f'Validation error in tactic index {idx}: {e}')
+                  raise e
+          print('JSON Schema validation passed successfully!')
+          "
+
+      - name: Run Markdown Pre-Flight QA Audit
+        run: |
+          # Automatically scan your curriculum markdown files using your qa_parser.py script
+          # Replace 'curriculum/' with your actual target directory if applicable
+          for file in curriculum/*.md; do
+            if [ -f "$file" ]; then
+              python qa_parser.py "$file"
+            fi
+          done
